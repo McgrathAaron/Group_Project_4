@@ -2,33 +2,23 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Infobox from './components/Infobox/Infobox'
+import { InfoboxContainer } from './Appstyle/style'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <InfoboxContainer>
+      <Infobox title="Blade" date="1998" rating={9.9} duration="2h20m" streams={{
+    disney: true,
+    netflix: false,
+    hulu: true,
+    siminn: true,
+    amazon: true,
+    hbo: true,
+}} description="A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires." cast="Wesley Snipes, Stephen Dorff, Kris Kristofferson" />
+    </InfoboxContainer>
   )
 }
 

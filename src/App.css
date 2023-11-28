@@ -5,6 +5,19 @@
   text-align: center;
 }
 
+Infobox{
+display: flex;
+align-items: flex-start;
+}
+
+.title{
+  color:#FF6D08;
+}
+
+.description{
+  color: #FF6D08;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
