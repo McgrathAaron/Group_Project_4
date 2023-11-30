@@ -1,12 +1,12 @@
 import InfoboxProps from "./InfoboxType";
-;
 import hulu from "../../assets/images/hulu.png";
 import disney from "../../assets/images/disney.png";
 import siminn from "../../assets/images/siminn.png";
 import hbo from "../../assets/images/hbo.png"
 import amazon from "../../assets/images/amazon.png"
 import netflix from "../../assets/images/netflix.png"
-import { PlatformLogo } from "./style";
+import { PlatformLogo, Details, TextContainer, LogoContainer, BigContainer, SubHeader } from "./style";
+
 
 function Infobox (props: InfoboxProps){
 
@@ -26,9 +26,6 @@ function Infobox (props: InfoboxProps){
                 case "amazon":
                     return <PlatformLogo src={amazon} alt={key} />
 
-            //   case "hbo":
-            //     return <image src={`${key}.png`} alt={key} />
-    
               default:
               break;
           }
@@ -37,26 +34,35 @@ function Infobox (props: InfoboxProps){
     
 
     return (
-        <>
+        <BigContainer>
         <h1 className="title">
             {props.title}
         </h1>
-        <span>
-            {props.date} - {props.rating} - {props.duration} 
-        </span>
-        <div>
+        <Details>
+            <div>{props.date}</div> -  <div>{props.rating}</div> -  <div>{props.duration}</div> 
+        </Details>
+        <LogoContainer>
             {
                 icons
             }
-        </div>
-        <h2 className="description">
+        </LogoContainer>
+        <TextContainer>
+        <SubHeader>
             description
-        </h2>
+        </SubHeader>
         <p>
             {props.description}
         </p>
-
-        </>
+        </TextContainer>
+        <TextContainer>
+        <h2 className="cast">
+            cast
+        </h2>
+        <p>
+            {props.cast}
+        </p>
+        </TextContainer>
+        </BigContainer>
 
     )
 }

@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
 export const InfoboxContainer = styled.div`
-background-color: black;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
 `
