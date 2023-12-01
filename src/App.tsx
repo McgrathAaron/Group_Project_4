@@ -20,7 +20,9 @@ function App() {
     siminn: true,
     amazon: true,
     hbo: true,
-}} description="A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires." cast="Wesley Snipes, Stephen Dorff, Kris Kristofferson" />
+    }} 
+    description="A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires." 
+    cast="Wesley Snipes, Stephen Dorff, Kris Kristofferson"/>
     </InfoboxContainer>
     <h2>recommended</h2>
     <MovieGrid>
