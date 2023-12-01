@@ -1,11 +1,10 @@
 import InfoboxProps from "./InfoboxType";
-;
 import hulu from "../../assets/images/hulu.png";
 import disney from "../../assets/images/disney.png";
 import siminn from "../../assets/images/siminn.png";
-import hbo from "../../assets/images/hbo.png"
-import amazon from "../../assets/images/amazon.png"
-import netflix from "../../assets/images/netflix.png"
+import hbo from "../../assets/images/hbo.png";
+import amazon from "../../assets/images/amazon.png";
+import netflix from "../../assets/images/netflix.png";
 import { PlatformLogo } from "./style";
 
 function Infobox (props: InfoboxProps){
