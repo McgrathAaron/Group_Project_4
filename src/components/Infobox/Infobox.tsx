@@ -59,7 +59,7 @@ function Infobox (props: InfoboxProps){
             cast
         </SubHeader>
         <p>
-            {props.cast}
+            {props.cast.map((c:string)=><div>{c}</div>)}
         </p>
         </TextContainer>
         </BigContainer>
