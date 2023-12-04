@@ -6,9 +6,12 @@ import Infobox from './components/Infobox/Infobox'
 import { InfoboxContainer } from './Appstyle/style'
 import MovieItem from './components/MovieItem/MovieItem'
 import { MovieGrid } from './components/MovieItem/style'
+
+import Navbar from './components/navbar'
 import { InnerVideo, VideoContainer } from './components/Trailer/style'
 import VideoItem from './components/Trailer/Trailer'
 import Api from './Api-fetch/Api'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,9 +19,12 @@ function App() {
   return (
     <div>
       {/* <Api title='Blade'></Api> */}
-      <VideoContainer>
+    <Navbar/>
+
+       <VideoContainer>
         <VideoItem title="Blade"></VideoItem>
       </VideoContainer>
+
     <InfoboxContainer>
       {/* <Infobox title="Blade" date="1998" rating={9.9} duration="2h20m" streams={{
     disney: false,
@@ -32,6 +38,8 @@ function App() {
     cast="Wesley Snipes, Stephen Dorff, Kris Kristofferson"/> */}
      <Api title='Blade'></Api>
     </InfoboxContainer>
+
+    <h2>Recommended</h2>
     <MovieGrid>
     <MovieItem></MovieItem>
     </MovieGrid>
