@@ -1,4 +1,4 @@
-type Streams = {
+export type Streams = {
     disney?: boolean,
     netflix?: boolean,
     hulu?: boolean,
@@ -6,14 +6,15 @@ type Streams = {
     amazon?: boolean,
     hbo?: boolean,
 }
-type InfoboxProps = {
+export type InfoboxProps = {
     title: string,
     date: string,
     rating: number,
     duration: string,
     description: string,
-    cast: string,
+    cast: [string],
     streams: Streams,
 }
-export default InfoboxProps;
+
+
 

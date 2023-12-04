@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PlatformLogo = styled.img`
 margin: 0rem;
-padding: 1rem;
+padding: 1rem 1rem 1rem 0rem;
 width: 2rem;
 `
 
@@ -11,6 +11,7 @@ export const Details = styled.div`
     gap: 1rem;
     font-family: 'DM sans';
     font-weight: bold;
+    justify-content: space-between;
     `
         
 export const TextContainer = styled.p`
@@ -37,7 +38,5 @@ export const Header = styled.h1`
 color: #FF6D08;
 font-family: 'Varela Round';
 font-size: 3rem;
-margin-left: 0;
-padding-left: 0;
 `
 
