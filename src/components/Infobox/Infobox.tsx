@@ -48,7 +48,7 @@ function Infobox (props: InfoboxProps){
         </LogoContainer>
         <TextContainer>
         <SubHeader>
-            description
+            Description
         </SubHeader>
         <p>
             {props.description}
@@ -56,7 +56,7 @@ function Infobox (props: InfoboxProps){
         </TextContainer>
         <TextContainer>
         <h2 className="cast">
-            cast
+            Cast
         </h2>
         <p>
             {props.cast}
