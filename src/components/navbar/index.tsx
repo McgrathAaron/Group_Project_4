@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from 'react';
 import { StyledNavbar, FlexBetweenContainer, Logo, SearchIcon } from './style';
 import { MagnifyingGlassCircleIcon } from '@heroicons/react/24/outline';
-import logo from '@/assets/images/Logo.svg'
+import logo from '@/€assets/images/Logo.svg'
 
 type Props = {};
 
@@ -15,6 +15,9 @@ const Navbar = (props: Props) => {
             </Logo>
             <SearchIcon>
               <MagnifyingGlassCircleIcon />
+              <div>
+                
+              </div>
             </SearchIcon>
           </FlexBetweenContainer>
         </StyledNavbar>
