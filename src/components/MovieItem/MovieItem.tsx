@@ -1,5 +1,5 @@
 import MovieItemProps from "./MovieItemType";
-import { CardContainer, InnerCard } from "./style";
+import { CardContainer, InnerCard, Recommended } from "./style";
 import { useState, useEffect } from "react";
 
 
@@ -21,6 +21,9 @@ function MovieItem() {
     },[]) 
     console.log (movies)    
     return (
+        <div>
+        
+        <Recommended>recommended</Recommended>
         <CardContainer>
             {movies.map(
             (movie)=>{
@@ -31,6 +34,7 @@ function MovieItem() {
             
             }
         </CardContainer>
+        </div>
     )
 }
 
