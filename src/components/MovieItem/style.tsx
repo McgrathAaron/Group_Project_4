@@ -16,5 +16,11 @@ border-radius: 1rem;
 export const MovieGrid = styled.div`
 display: flex;
 align-items: center;
+margin: 1rem;
 
+`
+
+export const Recommended = styled.h2`
+color: #FF6D08;
+font-family: Varela Round;
 `

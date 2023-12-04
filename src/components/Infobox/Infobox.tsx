@@ -5,7 +5,7 @@ import siminn from "../../assets/images/siminn.png";
 import hbo from "../../assets/images/hbo.png"
 import amazon from "../../assets/images/amazon.png"
 import netflix from "../../assets/images/netflix.png"
-import { PlatformLogo, Details, TextContainer, LogoContainer, BigContainer, SubHeader } from "./style";
+import { PlatformLogo, Details, TextContainer, LogoContainer, BigContainer, SubHeader, Header } from "./style";
 
 
 function Infobox (props: InfoboxProps){
@@ -35,9 +35,9 @@ function Infobox (props: InfoboxProps){
 
     return (
         <BigContainer>
-        <h1 className="title">
+        <Header>
             {props.title}
-        </h1>
+        </Header>
         <Details>
             <div>{props.date}</div> -  <div>{props.rating}</div> -  <div>{props.duration}</div> 
         </Details>
@@ -55,9 +55,10 @@ function Infobox (props: InfoboxProps){
         </p>
         </TextContainer>
         <TextContainer>
-        <h2 className="cast">
-            Cast
-        </h2>
+
+        <SubHeader>
+            cast
+        </SubHeader>
         <p>
             {props.cast}
         </p>
