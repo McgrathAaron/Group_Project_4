@@ -5,7 +5,7 @@ import Infobox from "../components/Infobox/Infobox"
 const Api = (props: InfoboxProps) => {
     const [video, setVideo] = useState([{key:""}])
     
-    const [search, setSearch] = useState ([{}])
+    const [search, setSearch] = useState ({vote_average:-1})
 
     const [cast, setCast] = useState([""])
 

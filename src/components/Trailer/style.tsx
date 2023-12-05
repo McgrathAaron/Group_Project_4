@@ -5,6 +5,7 @@ export const VideoContainer = styled.div`
 flex-wrap: wrap;
 gap: 1rem; */
 margin-bottom: 7rem;
+padding-top: 39px;
 
 `
 export const InnerVideo = styled.div`

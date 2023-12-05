@@ -23,7 +23,7 @@ function MovieItem() {
     return (
         <div>
         
-        <Recommended>recommended</Recommended>
+        <Recommended>Recommended</Recommended>
         <CardContainer>
             {movies.map(
             (movie)=>{
