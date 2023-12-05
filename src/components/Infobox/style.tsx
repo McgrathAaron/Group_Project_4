@@ -40,3 +40,7 @@ font-family: 'Varela Round';
 font-size: 3rem;
 `
 
+export const CastList = styled.div`
+flex-wrap: wrap;
+`
+

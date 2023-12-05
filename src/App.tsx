@@ -39,7 +39,7 @@ function App() {
      <Api title='Blade'></Api>
     </InfoboxContainer>
 
-    <h2>Recommended</h2>
+    
     <MovieGrid>
     <MovieItem></MovieItem>
     </MovieGrid>
