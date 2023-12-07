@@ -17,8 +17,9 @@ const Api = (props: InfoboxProps) => {
         method: "GET",
         headers: {
           accept: "application/json",
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMGY4NjcyNjlmNjQyMzRmMjE4YTM0YWU0NzI1MzFiMiIsInN1YiI6IjY1NjliNTNkZDA0ZDFhMDEyZWI5Y2M3NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8wyUHGs8hOVWSOden0u72BGvAPjYjDhz4kX2z_6_VUs",
+          Authorization: `Bearer ${
+            import.meta.env.VITE_REACT_APP_TMDB_API_KEY
+          }`,
         },
       };
 

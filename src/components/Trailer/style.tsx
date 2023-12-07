@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const VideoContainer = styled.div`
-  /* display: flex;
-flex-wrap: wrap;
-gap: 1rem; */
   margin-bottom: 7rem;
   padding-top: 39px;
 `;
