@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+Viti is an Icelandic site that shows you which streaming provider has the content you need.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The team behind Viti is Aaron Mcgrath, Ingvi Rafn & Peter Takács.
 
-Currently, two official plugins are available:
+We wanted to simplify life for Icelanders, help them have a common database where you can find answers to these questions, and from the conversations between the three of us, Viti was born. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The problem is that people have a hard time finding what they want too watch. They want to know whats available and to be able to search efficiently on a site that is clean and understandable. 
 
-## Expanding the ESLint configuration
+In programming the 'Viti' site we used react, vite, styled-Components, typescript, HTML/CSS and GIT. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+For all our fetches we used the TMDB API.
