@@ -8,10 +8,7 @@ width: 100%;
 padding: 8px;
 background-color: #FF6D08; /* Added a background color if needed */
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Added a box shadow for a subtle effect */
-    /* Styles for smaller screens 
-    @media (max-width: 768px) {
-    */
-  }
+/* Styles for smaller screens @media (max-width: 768px)*/
 `;
 
 export const FlexBetweenContainer = styled.div`
@@ -29,5 +26,6 @@ export const Logo = styled.div`
 export const SearchIcon = styled.div`
   width: 24px;
   padding-right: 24px;
+  color: #FBFBFA;
   /*styles for the search icon */
-`;
+`;         
