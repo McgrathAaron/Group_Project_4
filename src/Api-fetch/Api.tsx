@@ -23,44 +23,38 @@ const Api = (props: InfoboxProps) => {
         },
       };
 
-      const r = await fetch(
+      const search = await fetch(
         `https://api.themoviedb.org/3/search/movie?query=${props.title}&include_adult=false&language=en-US&page=1`,
         options
       );
-      const response = await r.json();
+      const response = await search.json();
 
       const id = response.results[0].id;
 
       setSearch(response.results[0]);
 
-      console.log("Search", response);
-
-      const d = await fetch(
+      const duration = await fetch(
         `https://api.themoviedb.org/3/movie/${id}?language=en-US`,
         options
       );
-      const response4 = await d.json();
+      const response4 = await duration.json();
 
       setDuration(response4);
 
-      console.log("Duration", response4);
+      
 
-      const v = await fetch(
+      const video = await fetch(
         `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
         options
       );
-      const response2 = await v.json();
+      const response2 = await video.json();
 
       setVideo(response2.results[0]);
-      console.log("Video", response2);
-
-      const c = await fetch(
+      const cast = await fetch(
         `https://api.themoviedb.org/3/movie/${id}/credits?language=en-US`,
         options
       );
-      const response3 = await c.json();
-
-      console.log("Cast", response3);
+      const response3 = await cast.json();
 
       setCast(response3.cast.map((a) => a.original_name));
     };
